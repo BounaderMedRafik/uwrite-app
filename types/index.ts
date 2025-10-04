@@ -1,23 +1,32 @@
 export interface User {
-  uuid: string; //clerk user id
-  created_at: string;
-  username: string;
+  uuid: string;
+  created_at: Date;
   email: string;
-  fullname: string;
+  phonenum: string;
+  username: string;
+  //general infos
+  first_name: string;
+  last_name: string;
   bio: string;
-  pfp: string;
-  cover: string;
-  tags: string[];
-  // social links
-  facebook: string;
-  instagram: string;
-  twitter: string;
-  github: string;
-  linkedin: string;
-  portfolio: string;
-  number: string;
-  customemil: string;
-  //personl infos
+  avatar_url: string;
   location: string;
   languages: string;
+  //socials
+  instagram: string;
+  twitter: string;
+  facebook: string;
+  linkedin: string;
+  github: string;
+  youtube: string;
+  dribbble: string;
+  figma: string;
+  medium: string;
+  behance: string;
+  tiktok: string;
+  gumroad: string;
+  reddit: string;
+  buymeacoffee: string;
+  patreon: string;
+  kofi: string;
+  website: string;
 }
