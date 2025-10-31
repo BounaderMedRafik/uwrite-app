@@ -1,4 +1,5 @@
 import LandingPage from "@/components/pages/LandingPage";
+import MainPageContennt from "@/components/pages/MainPageContennt";
 import { SignedIn, SignedOut } from "@clerk/nextjs";
 
 export default function Home() {
@@ -9,7 +10,7 @@ export default function Home() {
         <LandingPage />
       </SignedOut>
       <SignedIn>
-        <div>Hello</div>
+        <MainPageContennt />
       </SignedIn>
     </div>
   );
