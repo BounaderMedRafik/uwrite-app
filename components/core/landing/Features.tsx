@@ -26,16 +26,14 @@ const Feature197 = ({
     {
       id: 1,
       title: "Build Your Portfolio Effortlessly",
-      image:
-        "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
+      image: "/illus/build-portfolio-effortlessly.png",
       description:
         "Create a beautiful and professional online portfolio in minutes — no coding needed. Highlight your skills, experiences, and achievements in a clean, minimal design that reflects your personality.",
     },
     {
       id: 2,
       title: "Integrated Blogging Experience",
-      image:
-        "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
+      image: "/illus/blogging-experience.png",
       description:
         "Add your personal blog directly to your portfolio. Share your thoughts, tutorials, and insights in an elegant layout that complements your portfolio content seamlessly.",
     },
@@ -69,11 +67,16 @@ const Feature197 = ({
   const [prevTabId, setPrevTabId] = useState<number>(1);
 
   const activeFeature = features.find((f) => f.id === activeTabId)!;
-  const direction = activeTabId > prevTabId ? 1 : -1; // 1 = down, -1 = up
+  const direction = activeTabId > prevTabId ? 1 : -1;
 
   return (
-    <section className="py-32">
-      <div className="container mx-auto">
+    <section className="py-32 relative">
+      <h2 className="mx-auto max-w-5xl mb-10 text-balance text-center text-3xl font-medium md:text-6xl">
+        Features
+      </h2>
+
+      <div className=" " />
+      <div className="container mx-auto relative z-20">
         <div className="mb-12 flex w-full items-start justify-between gap-12">
           {/* Accordion Section */}
           <div className="w-full md:w-1/2">
@@ -119,7 +122,7 @@ const Feature197 = ({
           </div>
 
           {/* Animated Image Preview */}
-          <div className="bg-muted relative m-auto hidden w-1/2 overflow-hidden rounded-xl md:block h-[400px]">
+          <div className=" relative m-auto hidden w-1/2  rounded-xl md:block h-[400px]">
             <AnimatePresence mode="wait" custom={direction}>
               <motion.img
                 key={activeFeature.image}
