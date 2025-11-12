@@ -18,7 +18,7 @@ const Testimonial10 = ({
     name: "Bounader Med Rafik",
     role: "Web Developer & Motion Designer",
     avatar: {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp",
+      src: "https://hxcqxvdpfctfywkxocdr.supabase.co/storage/v1/object/public/MyPics/264458597_448489896895215_5781428340992632480_n.jpg",
       alt: "BounaderMedRafik",
     },
   },

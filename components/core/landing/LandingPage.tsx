@@ -1,11 +1,20 @@
-import { Feature197 } from "./Features";
+import { SignupForm } from "@/components/signup-form";
+import { Banner1 } from "./Banner";
 import { Hero115 } from "./Hero";
 import { Testimonial10 } from "./Testimonials";
 import { Logos8 } from "./TrustedBy";
+import UniqueLink from "./UniqueLink";
 
 const LandingPage = () => {
   return (
     <div>
+      <Banner1
+        title="UWRITE is in Beta"
+        description="We’re still building and improving. Expect updates soon!"
+        linkText="Give Feedback"
+        linkUrl="/feedback"
+      />
+
       <Hero115
         imageSrc="/brand/hero-image.jpg"
         heading={"Showcase Your Story, Professionally."}
@@ -14,8 +23,9 @@ const LandingPage = () => {
         }
       />
       <Logos8 />
-      <Feature197 />
+      <UniqueLink />
       <Testimonial10 quote="I love how clean and minimal everything looks. It actually feels mine, not like a template everyone else uses." />
+      <SignupForm />
     </div>
   );
 };
