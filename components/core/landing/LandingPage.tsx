@@ -1,4 +1,4 @@
-import { SignupForm } from "@/components/signup-form";
+import SignUpForm from "@/components/signup-form";
 import { Banner1 } from "./Banner";
 import { Hero115 } from "./Hero";
 import { Testimonial10 } from "./Testimonials";
@@ -25,7 +25,7 @@ const LandingPage = () => {
       <Logos8 />
       <UniqueLink />
       <Testimonial10 quote="I love how clean and minimal everything looks. It actually feels mine, not like a template everyone else uses." />
-      <SignupForm />
+      <SignUpForm />
     </div>
   );
 };
